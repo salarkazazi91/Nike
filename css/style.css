@@ -602,3 +602,9 @@ a.box.text-center {
 .tabs .card.right-pane .text-wrapper {
     width: 68%;
 }
+
+.basic-2,
+.basic-3 {
+    color: #333;
+    margin-top: 100px;
+}
