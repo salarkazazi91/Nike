@@ -1,5 +1,4 @@
 @import url(fonts.css);
-
 body,
 h1,
 h2,
@@ -29,7 +28,7 @@ ol {
 
 body {
     font-family: 'Oswald-Regular', sans-serif;
-    font-width: 400;
+    font-weight: 400;
     color: white;
     line-height: 1.5;
 }
@@ -38,7 +37,6 @@ body {
     position: absolute;
     width: 100%;
 }
-
 
 .header-1.fixedbar {
     position: fixed !important;
@@ -85,7 +83,8 @@ body {
     position: relative;
     text-decoration: none;
     padding: 0px;
-    letter-spacing: 1px;;
+    letter-spacing: 1px;
+    ;
 }
 
 .mainmenu ul li a::after {
@@ -130,12 +129,14 @@ html {
     font-size: 16px;
 }
 
-
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
@@ -158,10 +159,11 @@ a {
     overflow: hidden;
 }
 
-
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
-    position: absolute;;
+    position: absolute;
+    ;
     top: 50%;
     width: auto;
     margin-top: -22px;
@@ -181,7 +183,8 @@ a {
     border-radius: 3px 0 0 3px;
 }
 
-.next:hover, .prev:hover {
+.next:hover,
+.prev:hover {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -210,7 +213,8 @@ a {
 }
 
 .myslides .p_img {
-    display: block;;
+    display: block;
+    ;
     width: auto;
     height: 500px;
     position: relative;
@@ -235,18 +239,18 @@ a {
 .myslides .p_detail h3 {
     font-size: 50px;
     font-weight: 600;
-    margin-top:175px ;
+    margin-top: 175px;
     font-style: italic;
     animation-duration: 1.2s;
     animation-fill-mode: both;
     animation-name: fadeInLeft;
 }
 
-
 .myslides .p_detail h3 {
     font-size: 50px;
     font-weight: 600;
-    font-style: italic;;
+    font-style: italic;
+    ;
     animation-name: fadeInLeft;
     animation-duration: 1.2s;
     animation-fill-mode: both;
@@ -259,9 +263,7 @@ a {
 
 .myslides .p_detail h3 i.rate {
     color: #ffcb00;
-
 }
-
 
 .myslides .p_detail h4 {
     font-size: 14px;
@@ -271,14 +273,11 @@ a {
     animation-duration: 1.2s;
     animation-fill-mode: both;
     animation-name: slideInRight;
-
 }
-
 
 .myslides .p_detail ul i {
     color: #ffcb00;
 }
-
 
 .myslides .p_detail select {
     display: inline;
@@ -290,9 +289,7 @@ a {
     animation-duration: 1.2s;
     animation-fill-mode: both;
     animation-name: fadeInLeft;
-
 }
-
 
 .myslides .p_detail a {
     font-size: 14px;
@@ -302,17 +299,14 @@ a {
     border: 2px solid white;
     margin-right: 15px;
     transition: 0.5s background-color;
-
     animation-duration: 1.2s;
     animation-fill-mode: both;
     animation-name: fadeInUp;
-
 }
 
 .myslides .p_detail a:hover {
     background-color: #a10a05;
 }
-
 
 .myslides .p_detail span {
     display: inline-block;
@@ -321,7 +315,6 @@ a {
     animation-duration: 1.2s;
     animation-fill-mode: both;
     animation-name: slideInRight;
-
 }
 
 .fadeInLeft {
@@ -336,47 +329,154 @@ a {
     animation-name: slideInRight;
 }
 
-
 @keyframes fadeInUp {
-    from{
+    from {
         opacity: 0;
-        transform: translate3d(0,100%,0);
+        transform: translate3d(0, 100%, 0);
     }
-
-    to{
+    to {
         opacity: 1;
-    translate3d(0,0,0)
+        translate3d: (0, 0, 0)
     }
-
 }
 
-
 @keyframes fadeInLeft {
-    from{
+    from {
         opacity: 0;
-        transform: translate3d(100%,0,0);
+        transform: translate3d(100%, 0, 0);
     }
-
-    to{
+    to {
         opacity: 1;
-    translate3d(0,0,0)
+        translate3d: (0, 0, 0)
     }
-
 }
 
 @keyframes slideInRight {
-    from{
+    from {
         opacity: 0;
-        transform: translate3d(-100%,0,0);
+        transform: translate3d(-100%, 0, 0);
     }
-
-    to{
+    to {
         opacity: 1;
-    translate3d(0,0,0)
+        translate3d: (0, 0, 0)
     }
-
 }
 
+.service-section {
+    color: #333;
+    padding: 150px;
+}
 
+.dark {
+    color: #00bcd4;
+}
 
+.sec_title {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 25px;
+    padding: 14px 0;
+}
 
+.color_aaa {
+    color: darkgray;
+}
+
+.row.custom_column .col-lg-3.col-sm-4.col-md-3 {
+    width: 20% !important;
+    flex: 0 0 20%;
+}
+
+.box {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: all ease 400ms;
+}
+
+.box .flipper {
+    transform-origin: 100% 213.5px;
+    margin-top: 60px;
+}
+
+.box .back i,
+.box .front i {
+    font-size: 64px;
+    line-height: 1;
+    color: #aaaaaa;
+    display: block;
+    margin-bottom: 17px;
+    transition: all ease 400ms;
+}
+
+.box .front h3,
+.box .back h3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    margin: 0%;
+    transition: all ease 400ms;
+}
+
+.flipper {
+    transform: perspective(1000px);
+    transition: 0.6s;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: rotateY(0deg);
+}
+
+.front {
+    background: transparent;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    border: 2px solid rgba(27, 27, 27, 1);
+    padding: 48px 45px 45px;
+    width: 100%;
+}
+
+.back {
+    background: #00bcd4;
+    transform: rotateY(-180deg);
+    width: 100%;
+    padding: 48px 45px 45px;
+    border: 2px solid rgba(27, 27, 27, 1);
+    position: relative;
+}
+
+.box:hover .front {
+    transform: rotateY(180deg);
+}
+
+.box:hover .back {
+    transform: rotateY(0deg);
+}
+
+.box .back h3,
+.box .back i {
+    color: white;
+}
+
+a.box.text-center {
+    text-decoration: none;
+}
