@@ -32,3 +32,8 @@
     font-family: Oswald-VariableFont_wght;
     src: url('../fonts/Oswald-VariableFont_wght.ttf')
 }
+
+@font-face {
+    font-family: RobotoCondensed-Regular;
+    src: url('../fonts/RobotoCondensed-Regular.ttf')
+}
